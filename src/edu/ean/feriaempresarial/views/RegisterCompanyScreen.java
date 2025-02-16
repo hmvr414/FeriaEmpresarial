@@ -38,7 +38,7 @@ public class RegisterCompanyScreen implements IScreen {
         try {
             companyRegister.add(company);
             System.out.println("Empresa registrada");
-            appState.setScreen(new CompaniesMenuScreen(appState.getStandOccupancyRegister()));
+            appState.setScreen(new CompaniesMenuScreen());
         } catch (EntityAlreadyExistsException e) {
             didFail = true;
             System.out.println("La empresa ya existe");

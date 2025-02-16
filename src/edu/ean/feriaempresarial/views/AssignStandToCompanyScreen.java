@@ -2,8 +2,6 @@ package edu.ean.feriaempresarial.views;
 
 import java.util.Optional;
 
-import javax.swing.text.html.parser.Entity;
-
 import edu.ean.feriaempresarial.model.AppState;
 import edu.ean.feriaempresarial.model.Company;
 import edu.ean.feriaempresarial.model.EntityRegister;
@@ -65,18 +63,15 @@ public class AssignStandToCompanyScreen implements IScreen {
                 if (listStandsScreen.getEditingStand().isPresent()) {
                     editingStand = listStandsScreen.getEditingStand();                        
                     assignStandToCompany();
+                    if (returnToCompaniesMenu) {
+                        appState.setScreen(new CompaniesMenuScreen());
+                    } else {
+                        appState.setScreen(new StandsMenuScreen());
+                    }
                 } else {
                     step = -1;
                 }
                 break;
-            case 3:
-                if (returnToCompaniesMenu) {
-                    appState.setScreen(new CompaniesMenuScreen(appState.getStandOccupancyRegister()));
-                } else {
-                    appState.setScreen(new StandsMenuScreen());
-                }
-                break;
-            
             default:
                 System.out.println("Opción no válida");
                 break;

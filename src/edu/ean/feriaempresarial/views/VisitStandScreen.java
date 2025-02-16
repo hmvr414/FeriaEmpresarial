@@ -34,7 +34,7 @@ public class VisitStandScreen implements IScreen {
         this.standRegister = standRegister;
         this.visitRegister = visitRegister;
         this.listVisitorsScreen = new ListVisitorsScreen(visitorRegister, ListVisitorsScreenMode.SELECT_VISITOR);
-        this.listStandsScreen = new ListStandsScreen(standRegister, standOccupancyRegister, ListStandsScreenMode.LIST_OCCUPIED_STANDS);
+        this.listStandsScreen = new ListStandsScreen(standRegister, standOccupancyRegister, ListStandsScreenMode.SELECT_OCCUPIED_STAND);
     }
 
     private void showSelectVisitor() {

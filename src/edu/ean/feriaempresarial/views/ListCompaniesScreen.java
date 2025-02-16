@@ -112,7 +112,7 @@ public class ListCompaniesScreen implements IScreen {
     }
 
     private void updateList(AppState appState) {
-        appState.setScreen(new CompaniesMenuScreen(appState.getStandOccupancyRegister()));
+        appState.setScreen(new CompaniesMenuScreen());
     }
 
     private void updateDelete(AppState appState) {

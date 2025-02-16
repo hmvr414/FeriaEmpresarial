@@ -22,7 +22,7 @@ public class MainMenuScreen implements IScreen {
 
         switch (appState.getUserInput()) {
             case "1":
-                appState.setScreen(new CompaniesMenuScreen(appState.getStandOccupancyRegister()));
+                appState.setScreen(new CompaniesMenuScreen());
                 break;
             case "2":
                 appState.setScreen(new StandsMenuScreen());
