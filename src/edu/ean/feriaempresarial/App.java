@@ -2,6 +2,8 @@ package edu.ean.feriaempresarial;
 
 import java.util.Scanner;
 
+import edu.ean.feriaempresarial.model.AppState;
+
 public class App {
     private static AppState state = new AppState();
 

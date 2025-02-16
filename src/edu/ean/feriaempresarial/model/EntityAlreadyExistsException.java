@@ -1,4 +1,4 @@
-package edu.ean.feriaempresarial.views;
+package edu.ean.feriaempresarial.model;
 
 public class EntityAlreadyExistsException extends Exception {
     public EntityAlreadyExistsException(String message) {

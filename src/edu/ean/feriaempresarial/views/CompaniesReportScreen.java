@@ -3,11 +3,11 @@ package edu.ean.feriaempresarial.views;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import edu.ean.feriaempresarial.AppState;
-import edu.ean.feriaempresarial.Company;
-import edu.ean.feriaempresarial.EntityRegister;
-import edu.ean.feriaempresarial.Stand;
-import edu.ean.feriaempresarial.StandOccupancy;
+import edu.ean.feriaempresarial.model.AppState;
+import edu.ean.feriaempresarial.model.Company;
+import edu.ean.feriaempresarial.model.EntityRegister;
+import edu.ean.feriaempresarial.model.Stand;
+import edu.ean.feriaempresarial.model.StandOccupancy;
 
 public class CompaniesReportScreen implements IScreen {
     private EntityRegister<Company> companyRegister;

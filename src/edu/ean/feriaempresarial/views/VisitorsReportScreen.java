@@ -1,9 +1,9 @@
 package edu.ean.feriaempresarial.views;
 
-import edu.ean.feriaempresarial.AppState;
-import edu.ean.feriaempresarial.EntityRegister;
-import edu.ean.feriaempresarial.Visit;
-import edu.ean.feriaempresarial.Visitor;
+import edu.ean.feriaempresarial.model.AppState;
+import edu.ean.feriaempresarial.model.EntityRegister;
+import edu.ean.feriaempresarial.model.Visit;
+import edu.ean.feriaempresarial.model.Visitor;
 
 public class VisitorsReportScreen implements IScreen {
     private EntityRegister<Visitor> visitorRegister;

@@ -1,4 +1,4 @@
-package edu.ean.feriaempresarial;
+package edu.ean.feriaempresarial.model;
 
 public class StandOccupancy implements IIdentifiable {
     private Stand stand;

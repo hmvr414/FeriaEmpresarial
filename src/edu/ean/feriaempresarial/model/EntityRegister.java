@@ -1,10 +1,8 @@
-package edu.ean.feriaempresarial;
+package edu.ean.feriaempresarial.model;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
-
-import edu.ean.feriaempresarial.views.EntityAlreadyExistsException;
 
 public class EntityRegister<T extends IIdentifiable> {
     private List<T> entities = new ArrayList<>();

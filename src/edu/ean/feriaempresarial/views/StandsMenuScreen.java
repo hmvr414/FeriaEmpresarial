@@ -49,6 +49,12 @@ public class StandsMenuScreen implements IScreen {
                                                         appState.getStandOccupancyRegister(),
                                                         ListStandsScreenMode.DELETE_STAND));
                 break;
+            case "7":
+                appState.setScreen(new AssignStandToCompanyScreen(appState.getCompanyRegister(), 
+                                                                    appState.getStandRegister(), 
+                                                                    appState.getStandOccupancyRegister(),
+                                                                    false));
+                break;
             default:
                 System.out.println("Opción no válida");
                 break;
