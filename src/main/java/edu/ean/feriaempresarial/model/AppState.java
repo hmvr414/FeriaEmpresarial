@@ -80,10 +80,6 @@ public class AppState {
             visitorRegister.add(new Visitor("1234567890", "Juan", "juan@gmail.com"));
             visitorRegister.add(new Visitor("0987654321", "Pedro", "pedro@gmail.com"));
             visitorRegister.add(new Visitor("1357924680", "Maria", "maria@gmail.com"));
-    
-            // standOccupancyRegister.add(new StandOccupancy(standRegister.get("Stand 1").get(), 10));
-            // standOccupancyRegister.add(new StandOccupancy(standRegister.get("Stand 2").get(), 20));
-            // standOccupancyRegister.add(new StandOccupancy(standRegister.get("Stand 3").get(), 30));
         } catch (Exception e) {
             System.out.println("Error cargando datos de prueba");
             e.printStackTrace();

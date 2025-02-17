@@ -16,7 +16,7 @@ public class EntityRegister<T extends IIdentifiable> {
         return Optional.empty();
     }
 
-    Iterator<T> iterator() {
+    public Iterator<T> iterator() {
         return entities.iterator();
     }
     
@@ -46,6 +46,9 @@ public class EntityRegister<T extends IIdentifiable> {
 
     public void edit(T old, T updated) {
         int index = entities.indexOf(old);
+        if (index == -1) {
+            return;
+        }
         entities.set(index, updated);
     }
 
