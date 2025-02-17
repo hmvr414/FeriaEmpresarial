@@ -18,6 +18,7 @@ Before running the application, ensure you have the following installed:
 
 The project follows a Maven-based structure:
 
+```
 Feria-empresarial/
  │-- src/
  │ ├── main/
@@ -29,7 +30,7 @@ Feria-empresarial/
  │ │ ├── java/ # Unit tests
  │-- pom.xml # Maven configuration file
  │-- README.md # Project documentation
-
+```
 
 ### Running the Application
 
@@ -70,9 +71,10 @@ mvn jacoco:report
 
 ### Contributing
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
-    Commit your changes (git commit -m "Add new feature").
-    Push to the branch (git push origin feature-branch).
-    Open a Pull Request.
+1. Fork the repository.
+Create a new branch (`git checkout -b feature-branch`).
+Commit your changes (`git commit -m "Add new feature"`).
+Push to the branch (`git push origin feature-branch`).
+Open a Pull Request.
+
 
