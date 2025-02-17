@@ -2,6 +2,12 @@ package edu.ean.feriaempresarial.views;
 
 import edu.ean.feriaempresarial.model.AppState;
 
+/**
+ * Represents the visitors menu screen in the Feria Empresarial application.
+ * This screen provides options for listing, adding, updating, and deleting visitors,
+ * as well as allowing visitors to register visits to stands. Users can navigate 
+ * back to the main menu from this screen.
+ */
 public class VisitorsMenuScreen implements IScreen {
     public void show() {
         System.out.println("Feria Empresarial - Visitantes");

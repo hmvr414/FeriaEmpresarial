@@ -12,6 +12,12 @@ enum RegisterStandScreenMode {
     STAND_EDIT
 }
 
+/**
+ * Represents the screen for registering or editing stand information 
+ * in the Feria Empresarial application. This screen guides users through 
+ * entering stand details such as ID, location, and size. Depending on 
+ * the mode, it either creates a new stand or updates an existing one.
+ */
 public class RegisterStandScreen implements IScreen {
     private EntityRegister<Stand> standRegister = new EntityRegister<>();
     private RegisterStandScreenMode mode;

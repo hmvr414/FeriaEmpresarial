@@ -2,6 +2,11 @@ package edu.ean.feriaempresarial.views;
 
 import edu.ean.feriaempresarial.model.AppState;
 
+/**
+ * Represents the reports menu screen in the Feria Empresarial application.
+ * This screen provides options for generating reports on companies and their assigned stands,
+ * as well as visitors and the stands they have visited. Users can navigate back to the main menu.
+ */
 public class ReportsScreen implements IScreen {
     @Override
     public void show() {

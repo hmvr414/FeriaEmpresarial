@@ -9,6 +9,12 @@ import edu.ean.feriaempresarial.model.EntityRegister;
 import edu.ean.feriaempresarial.model.Stand;
 import edu.ean.feriaempresarial.model.StandOccupancy;
 
+/**
+ * Represents the companies report screen in the Feria Empresarial application.
+ * This screen generates a report displaying companies and their assigned stands.
+ * It retrieves data from the company and stand occupancy registers and presents
+ * the associations between companies and stands in a structured format.
+ */
 public class CompaniesReportScreen implements IScreen {
     private EntityRegister<Company> companyRegister;
     private EntityRegister<StandOccupancy> standOccupancyRegister;

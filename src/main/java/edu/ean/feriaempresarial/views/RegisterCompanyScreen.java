@@ -7,6 +7,12 @@ import edu.ean.feriaempresarial.model.Company;
 import edu.ean.feriaempresarial.model.EntityAlreadyExistsException;
 import edu.ean.feriaempresarial.model.EntityRegister;
 
+/**
+ * Represents the screen for registering or editing company information 
+ * in the Feria Empresarial application. This screen guides users through 
+ * entering company details such as name, sector, and email. Depending on 
+ * the mode, it either creates a new company or updates an existing one.
+ */
 public class RegisterCompanyScreen implements IScreen {
     private EntityRegister<Company> companyRegister = new EntityRegister<>();
 

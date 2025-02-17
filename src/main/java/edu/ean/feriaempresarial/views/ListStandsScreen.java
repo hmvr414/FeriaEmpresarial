@@ -19,6 +19,12 @@ enum ListStandsScreenMode {
     SELECT_FREE_STAND
 }
 
+/**
+ * Represents the screen for listing, selecting, editing, and deleting stands 
+ * in the Feria Empresarial application. This screen dynamically adjusts its behavior
+ * based on the selected mode, allowing users to view all stands, filter by occupancy status, 
+ * remove stands, edit stand details, or select a stand for further actions.
+ */
 public class ListStandsScreen implements IScreen {
     private EntityRegister<Stand> standRegister = new EntityRegister<>();
     private EntityRegister<StandOccupancy> standOccupancyRegister = new EntityRegister<>();

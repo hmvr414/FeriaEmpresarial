@@ -2,6 +2,12 @@ package edu.ean.feriaempresarial.views;
 
 import edu.ean.feriaempresarial.model.AppState;
 
+/**
+ * Represents the companies menu screen in the Feria Empresarial application.
+ * This screen provides options for listing, adding, updating, and deleting companies,
+ * as well as assigning companies to stands and viewing company reviews.
+ * It handles user input to transition to the corresponding screens.
+ */
 public class CompaniesMenuScreen implements IScreen {
     
     public CompaniesMenuScreen() {

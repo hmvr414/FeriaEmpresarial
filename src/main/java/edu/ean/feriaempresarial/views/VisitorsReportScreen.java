@@ -11,6 +11,12 @@ import edu.ean.feriaempresarial.model.StandOccupancy;
 import edu.ean.feriaempresarial.model.Visit;
 import edu.ean.feriaempresarial.model.Visitor;
 
+/**
+ * Represents the visitors report screen in the Feria Empresarial application.
+ * This screen generates a report displaying visitors and the stands they have visited,
+ * including the associated companies. Users can view detailed visit information
+ * and navigate back to the reports menu.
+ */
 public class VisitorsReportScreen implements IScreen {
     private EntityRegister<Visitor> visitorRegister;
     private EntityRegister<Visit> visitRegister;

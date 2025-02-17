@@ -10,6 +10,11 @@ import edu.ean.feriaempresarial.model.StandOccupancy;
 import edu.ean.feriaempresarial.model.Visit;
 import edu.ean.feriaempresarial.model.Visitor;
 
+/**
+ * Represents the reviews screen in the Feria Empresarial application.
+ * This screen allows users to select a company and view visitor comments and ratings 
+ * for its associated stands. It calculates and displays the average rating for the company.
+ */
 public class ReviewsScreen implements IScreen {
     private EntityRegister<Visit> visitRegister;
     private EntityRegister<StandOccupancy> occupancyRegister;

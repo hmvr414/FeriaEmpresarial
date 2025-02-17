@@ -15,6 +15,12 @@ enum ListCompaniesScreenMode {
     SELECT_COMPANY
 }
 
+/**
+ * Represents the screen for listing, selecting, editing, and deleting companies
+ * in the Feria Empresarial application. This screen dynamically adjusts its behavior
+ * based on the selected mode, allowing users to view registered companies, remove them,
+ * edit their details, or select a company for further actions.
+ */
 public class ListCompaniesScreen implements IScreen {
     private EntityRegister<Company> companyRegister = new EntityRegister<>();
     private EntityRegister<StandOccupancy> standOccupancyRegister = new EntityRegister<>();

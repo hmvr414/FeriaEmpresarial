@@ -12,6 +12,12 @@ enum RegisterVisitorScreenMode {
     VISITOR_EDIT
 }
 
+/**
+ * Represents the screen for registering or editing visitor information 
+ * in the Feria Empresarial application. This screen guides users through 
+ * entering visitor details such as ID, name, and email. Depending on 
+ * the mode, it either creates a new visitor or updates an existing one.
+ */
 public class RegisterVisitorScreen implements IScreen {
     private EntityRegister<Visitor> visitorRegister = new EntityRegister<>();
     private RegisterVisitorScreenMode mode = RegisterVisitorScreenMode.VISITOR_NEW;

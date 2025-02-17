@@ -9,6 +9,13 @@ import edu.ean.feriaempresarial.model.StandOccupancy;
 import edu.ean.feriaempresarial.model.Visit;
 import edu.ean.feriaempresarial.model.Visitor;
 
+/**
+ * Represents the screen for registering a visitor's visit to a stand 
+ * in the Feria Empresarial application. This screen guides users through 
+ * selecting a visitor, selecting a stand, entering a comment, and providing 
+ * a rating for the visit. Once completed, the visit is recorded, and the 
+ * user is returned to the visitors menu.
+ */
 public class VisitStandScreen implements IScreen {      
     private EntityRegister<Visit> visitRegister;
 

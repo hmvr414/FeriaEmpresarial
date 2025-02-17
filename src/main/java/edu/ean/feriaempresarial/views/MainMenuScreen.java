@@ -2,6 +2,12 @@ package edu.ean.feriaempresarial.views;
 
 import edu.ean.feriaempresarial.model.AppState;
 
+/**
+ * Represents the main menu screen of the Feria Empresarial application.
+ * This screen displays the primary navigation options for managing companies, stands,
+ * visitors, reports, and test data loading. It handles user input to transition to 
+ * the appropriate screen or perform specific actions.
+ */
 public class MainMenuScreen implements IScreen {
 
     @Override
@@ -19,8 +25,7 @@ public class MainMenuScreen implements IScreen {
     @Override
     public void update(AppState appState) {
         System.out.println("Recibida la opción: " + appState.getUserInput());
-        // compare the string appState.getUserInput() to the strings "5"
-
+        
         switch (appState.getUserInput()) {
             case "1":
                 appState.setScreen(new CompaniesMenuScreen());

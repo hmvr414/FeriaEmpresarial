@@ -13,6 +13,12 @@ enum ListVisitorsScreenMode {
     SELECT_VISITOR
 }
 
+/**
+ * Represents the screen for listing, selecting, editing, and deleting visitors 
+ * in the Feria Empresarial application. This screen dynamically adjusts its behavior
+ * based on the selected mode, allowing users to view registered visitors, remove them,
+ * edit visitor details, or select a visitor for further actions.
+ */
 public class ListVisitorsScreen implements IScreen {
     private EntityRegister<Visitor> visitorRegister = new EntityRegister<>();
     private ListVisitorsScreenMode mode = ListVisitorsScreenMode.LIST_VISITORS;
