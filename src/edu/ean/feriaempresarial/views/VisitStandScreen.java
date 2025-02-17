@@ -9,10 +9,7 @@ import edu.ean.feriaempresarial.model.StandOccupancy;
 import edu.ean.feriaempresarial.model.Visit;
 import edu.ean.feriaempresarial.model.Visitor;
 
-public class VisitStandScreen implements IScreen {    
-    private EntityRegister<Visitor> visitorRegister;
-    private EntityRegister<StandOccupancy> standOccupancyRegister;
-    private EntityRegister<Stand> standRegister;
+public class VisitStandScreen implements IScreen {      
     private EntityRegister<Visit> visitRegister;
 
     private ListVisitorsScreen listVisitorsScreen;
@@ -29,9 +26,6 @@ public class VisitStandScreen implements IScreen {
                             EntityRegister<StandOccupancy> standOccupancyRegister, 
                             EntityRegister<Stand> standRegister, 
                             EntityRegister<Visit> visitRegister) {
-        this.visitorRegister = visitorRegister;
-        this.standOccupancyRegister = standOccupancyRegister;
-        this.standRegister = standRegister;
         this.visitRegister = visitRegister;
         this.listVisitorsScreen = new ListVisitorsScreen(visitorRegister, ListVisitorsScreenMode.SELECT_VISITOR);
         this.listStandsScreen = new ListStandsScreen(standRegister, standOccupancyRegister, ListStandsScreenMode.SELECT_OCCUPIED_STAND);

@@ -11,8 +11,9 @@ public class MainMenuScreen implements IScreen {
         System.out.println("2. Stands");
         System.out.println("3. Visitantes");
         System.out.println("4. Reportes");
-        System.out.println("5. Cargar datos de prueba");
-        System.out.println("6. Salir");
+        System.out.println("5. Cargar datos de prueba de empresas, stands y visitantes");
+        System.out.println("6. Cargar datos de prueba de ocupación de stands y visitas");
+        System.out.println("7. Salir");
     }
 
     @Override
@@ -34,9 +35,12 @@ public class MainMenuScreen implements IScreen {
                 appState.setScreen(new ReportsScreen());
                 break;
             case "5":
-                appState.loadTestData();
+                appState.loadCompanyStandsVisitorsTestData();
                 break;
             case "6":
+                appState.loadStandOccupancyVisitsTestData();
+                break;
+            case "7":
                 System.out.println("Saliendo de la aplicación");
                 appState.setRunning(false);
                 break;

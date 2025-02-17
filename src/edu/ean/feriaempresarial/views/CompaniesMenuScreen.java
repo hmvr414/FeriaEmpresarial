@@ -16,7 +16,8 @@ public class CompaniesMenuScreen implements IScreen {
         System.out.println("3. Actualizar empresa");
         System.out.println("4. Eliminar empresa");
         System.out.println("5. Asignar empresa a un stand");
-        System.out.println("6. Volver al menú principal");
+        System.out.println("6. Ver comentarios y calificaciones de una empresa");
+        System.out.println("7. Volver al menú principal");
     }
 
     @Override
@@ -47,6 +48,11 @@ public class CompaniesMenuScreen implements IScreen {
                                                                     true));
                 break;
             case "6":
+                appState.setScreen(new ReviewsScreen(appState.getVisitRegister(), 
+                                                        appState.getCompanyRegister(), 
+                                                        appState.getStandOccupancyRegister()));
+                break;
+            case "7":
                 appState.setScreen(new MainMenuScreen());
                 break;
             default:

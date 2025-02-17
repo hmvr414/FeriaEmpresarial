@@ -18,7 +18,9 @@ public class ReportsScreen implements IScreen {
                 appState.setScreen(new CompaniesReportScreen(appState.getCompanyRegister(), appState.getStandOccupancyRegister()));
                 break;
             case "2":
-                appState.setScreen(new VisitorsReportScreen(appState.getVisitorRegister(), appState.getVisitRegister()));
+                appState.setScreen(new VisitorsReportScreen(appState.getVisitorRegister(), 
+                                                            appState.getStandOccupancyRegister(), 
+                                                            appState.getVisitRegister()));
                 break;
             case "3":
                 appState.setScreen(new MainMenuScreen());
